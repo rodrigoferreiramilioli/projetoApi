@@ -1,0 +1,15 @@
+{
+  "name": "testeprojeto",
+  "version": "1.0.0",
+  "description": "teste projetos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "restify": "^8.4.0"
+  }
+}
