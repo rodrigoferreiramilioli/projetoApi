@@ -1,10 +1,12 @@
 const dataRequest = require('../model/teste');
 module.exports.dados = function (req, res, next){
-
     async function getdata (){        
-        return await dataRequest.datarequest();
+        const data = await dataRequest.datarequest();
+        const saveSql = await dataRequest.dataSql(data);
+        console.log(saveSql);
+        return data;
     }
-    getdata().then((data) => {
+    getdata().then((data) => {        
         data = JSON.parse(data);
         var message = {
             statusCode: '200',

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mssql": "^5.1.0",
     "request": "^2.88.0",
     "restify": "^8.4.0"
   }
